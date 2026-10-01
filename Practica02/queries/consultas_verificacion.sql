@@ -1,10 +1,10 @@
-USE db_test;
+USE db_test_7b;
 
 /* 1. Cuantas tablas existen en la base de datos db_test_7b? */
 SHOW TABLES;
 
 /* 2. Cuanto triggers existen en la base de datos db_test_7b? */
-SHOW TRIGGERS FROM db_test;
+SHOW TRIGGERS FROM db_test_7b;
 
 /* 3. Cuantos registros existen en la tabla users? */
 -- Total de Usuarios
@@ -48,26 +48,18 @@ SELECT  TO_USER AS usuario,  TO_HOST AS host, FROM_USER AS rol, FROM_HOST AS rol
 FROM mysql.role_edges ORDER BY ROL,TO_USER, FROM_USER ;
 
 /* 9. Verificar el total de procedimientos almacenados que existen en la base de datos db_test_7b */
-SHOW PROCEDURE STATUS WHERE Db = 'db_test';
+SHOW PROCEDURE STATUS WHERE Db = 'db_test_7b';
 
 
 /* 10. Verificación de Productos*/
 SELECT * FROM tb_products;
 /* 11. Contabilizar los productos */
 SELECT COUNT(*) FROM tb_products;
-
-/* 12. Visualizar todos los productos */
-SELECT * FROM tb_products;
-
-/* 13. Consulta para saber la trazabilidad de los productos */
+/* 12. Consulta para saber la trazabilidad de los productos */
 select * from vw_trazabilidad_productos ORDER BY operation_date desc limit 10;
-
-/* 14. Consulta la trazabilidad de usuarios */
+/* 13. Consulta la trazabilidad de usuarios */
 select * from vw_trazabilidad_usuarios ORDER BY operation_date asc;
-
-
-/* 15. Contabilizar cuantos productos por tabla hay por usuario */
-
+/* 14. Contabilizar cuantos productos por tabla hay por usuario */
 SELECT COUNT(*), vp.inserted_by
 FROM vw_trazabilidad_productos vp
 GROUP BY vp.inserted_by;

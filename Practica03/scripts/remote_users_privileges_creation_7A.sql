@@ -8,14 +8,17 @@ IDENTIFIED BY 'qwerty123';
 CREATE USER IF NOT EXISTS 'nombre.apellido'@'%'
 IDENTIFIED BY 'sumatricula';
 
-CREATE USER IF NOT EXISTS 'eutiquio.cruz'@'%'
-IDENTIFIED BY '240046';
+CREATE USER IF NOT EXISTS 'natalia.martinez'@'%'
+IDENTIFIED BY '240537';
 
-CREATE USER IF NOT EXISTS 'samuel.vargas'@'%'
-IDENTIFIED BY '240023';
+CREATE USER IF NOT EXISTS 'saul.barrios'@'%'
+IDENTIFIED BY '240196';
 
-CREATE USER IF NOT EXISTS 'gadiel.bobadilla'@'%'
-IDENTIFIED BY '240349';
+CREATE USER IF NOT EXISTS 'ivan.flores'@'%'
+IDENTIFIED BY '240793';
+
+CREATE USER IF NOT EXISTS 'yazmin.esquivel'@'%'
+IDENTIFIED BY '240235';
 
 
 /* ============================================================
@@ -24,7 +27,7 @@ IDENTIFIED BY '240349';
 
 /*
 IMPORTANTE:
-Este privilegio solamente debe asignarse al usuario administrador.
+Este privilegio solamente debe asignarse al usuario administrador
 */
 
 GRANT ALL PRIVILEGES ON *.*
@@ -32,12 +35,14 @@ TO 'nombre.apellido'@'%';
 
 
 /*
-Asignar privilegios CRUD sobre la base db_test_7b.
+Asignar privilegios CRUD sobre la base db_test. solo 1 vez al usuario sin rol
+no es considerada una buena práctica ya podría generar problemas de seguridad, 
+pero es para fines de aprendizaje.
 */
 
 GRANT SELECT, INSERT, UPDATE, DELETE
-ON db_test_7b.*
-TO 'samuel.vargas'@'%';
+ON db_test.*
+TO 'natalia.martinez'@'%';
 
 
 /* ============================================================
@@ -64,22 +69,36 @@ TO 'superadmin';
 
 /* ADMIN */
 GRANT ALL PRIVILEGES
-ON db_test_7b.*
+ON db_test.*
 TO 'admin';
 
 
 /* SUPPORT */
 GRANT SELECT, INSERT, UPDATE
-ON db_test_7b.tb_users
+ON db_test.tb_users
 TO 'support';
 
-GRANT SELECT, INSERT, UPDATE
-ON db_test_7b.tb_products
+GRANT SELECT, UPDATE
+ON db_test.tb_products
 TO 'support';
+
+GRANT SELECT 
+ON db_test.tbc_categories
+TO 'support';
+
+GRANT SELECT, INSERT, UPDATE 
+ON db_test.tbd_products_categories
+TO 'support';
+
+
 
 /* SELLER */
 GRANT SELECT, INSERT, UPDATE
-ON db_test_7b.tb_products
+ON db_test.tb_products
+TO 'seller';
+
+GRANT SELECT
+ON db_test.tbc_categories
 TO 'seller';
 
 /* ============================================================
@@ -88,22 +107,22 @@ TO 'seller';
 
 -- Este deben ser ustedes
 GRANT 'superadmin'
-TO 'marco.ramirez'@'%';
+TO 'nombre.apellido'@'%';
 
 -- Este debe ser el Prof. Marco
 GRANT 'admin'
 TO 'marco.ramirez'@'%';
 
--- IZQUIERDA
+-- SOPORTE
 GRANT 'support'
-TO 'samuel.vargas'@'%';
+TO 'saul.barrios'@'%';
 
--- DERECHA
+-- VENDEDORES
 GRANT 'seller'
-TO 'eutiquio.cruz'@'%';
+TO 'yazmin.esquivel'@'%';
 
 GRANT 'seller'
-TO 'gadiel.bobadilla'@'%';
+TO 'ivan.flores'@'%';
 
 /* ============================================================
    ESTABLECER ROLES PREDETERMINADOS
@@ -113,24 +132,25 @@ TO 'gadiel.bobadilla'@'%';
 Esto permite que el rol se active automáticamente cuando
 el usuario inicia sesión.
 */
+SET DEFAULT ROLE 'superadmin'
+TO 'nombre.apellido'@'%';
 
 SET DEFAULT ROLE 'admin'
 TO 'marco.ramirez'@'%';
 
 SET DEFAULT ROLE 'support'
-TO 'samuel.vargas'@'%';
+TO 'saul.barrios'@'%';
 
 SET DEFAULT ROLE 'seller'
-TO 'eutiquio.cruz'@'%';
+TO 'yazmin.esquivel'@'%';
 SET DEFAULT ROLE 'seller'
-TO 'gadiel.bobadilla'@'%';
+TO 'ivan.flores'@'%';
 
 
 /* ============================================================
-   VERIFICACIÓN
+   MENSAJE DE CONFIRMACIÓN
    ============================================================ */
 
-/* Mostrar usuarios remotos creados */
 SELECT "Los usuarios y privilegios han sido creados correctamente" AS mensaje;
 
 
