@@ -1,0 +1,101 @@
+﻿ID,name,description,sup_id_category,status
+1,Ropa,Prendas de vestir para todas las edades y estilos.,\N,1
+2,Hombre,Ropa para hombre.,1,1
+3,Mujer,Ropa para mujer.,1,1
+4,Unisex,Ropa y prendas sin distinción de género.,1,1
+5,Caballero,Prendas de línea formal y casual para caballero.,2,1
+6,Juvenil Hombre,Moda juvenil para hombre.,2,1
+7,Dama,Prendas de línea formal y casual para dama.,3,1
+8,Juvenil Mujer,Moda juvenil para mujer.,3,1
+9,Bebés,Ropa para bebés.,4,1
+10,Niños,Ropa para niños.,4,1
+11,Niñas,Ropa para niñas.,4,1
+12,Adolescentes,Ropa para adolescentes.,4,1
+13,Playeras,"Playeras, camisetas y polos para hombre.",2,1
+14,Pantalones,"Jeans, chinos y pantalones para hombre.",2,1
+15,Vestidos,"Vestidos casuales, formales y de temporada.",3,1
+16,Blusas,Blusas y tops para mujer.,3,1
+17,Sudaderas,Sudaderas y hoodies unisex.,4,1
+18,Ropa Deportiva,Prendas deportivas y athleisure unisex.,4,1
+19,Calzado,Zapatos y calzado para distintas actividades.,\N,1
+20,Calzado Hombre,Calzado para hombre.,19,1
+21,Calzado Mujer,Calzado para mujer.,19,1
+22,Calzado Infantil,"Calzado para bebés, niños y niñas.",19,1
+23,Tenis,"Tenis casuales, urbanos y deportivos.",20,1
+24,Zapatos Formales,Zapatos formales y de vestir.,20,1
+25,Tacones,"Tacones, plataformas y zapatillas.",21,1
+26,Botas,Botas y botines.,21,1
+27,Sandalias,Sandalias y calzado ligero infantil.,22,1
+28,Accesorios,Complementos de moda y uso personal.,\N,1
+29,Bolsas y Mochilas,"Bolsas, mochilas, maletines y cangureras.",28,1
+30,Joyería,Joyería y bisutería.,28,1
+31,Relojes,"Relojes analógicos, digitales y smartwatches.",28,1
+32,Lentes,Lentes de sol y accesorios ópticos.,28,1
+33,Gorras y Sombreros,"Gorras, sombreros y viseras.",28,1
+34,Cinturones,Cinturones casuales y formales.,28,1
+35,Carteras,"Carteras, tarjeteros y monederos.",28,1
+36,Electrónica,Dispositivos electrónicos y accesorios tecnológicos.,\N,1
+37,Computación,Equipos y accesorios de cómputo.,36,1
+38,Telefonía,Smartphones y accesorios móviles.,36,1
+39,Audio,Equipos de audio personal y para el hogar.,36,1
+40,Video y TV,"Pantallas, proyectores y dispositivos de video.",36,1
+41,Laptops,Computadoras portátiles.,37,1
+42,Componentes de PC,"Procesadores, memorias, tarjetas y almacenamiento.",37,1
+43,Periféricos,"Teclados, ratones, webcams y periféricos.",37,1
+44,Smartphones,Teléfonos inteligentes.,38,1
+45,Fundas y Protectores,"Fundas, micas y protectores para móviles.",38,1
+46,Audífonos,"Audífonos alámbricos, inalámbricos y TWS.",39,1
+47,Bocinas,Bocinas Bluetooth y sistemas de sonido.,39,1
+48,Smart TV,Televisores inteligentes y accesorios.,40,1
+49,Hogar y Cocina,"Productos para equipar, organizar y decorar el hogar.",\N,1
+50,Cocina,"Utensilios, vajilla y accesorios de cocina.",49,1
+51,Electrodomésticos,Electrodomésticos grandes y pequeños.,49,1
+52,Muebles,Muebles para hogar y oficina.,49,1
+53,Decoración,Artículos decorativos y ambientación.,49,1
+54,Recámara,Productos para dormitorio y descanso.,49,1
+55,Licuadoras,"Licuadoras, procesadores y mezcladores.",51,1
+56,Cafeteras,Cafeteras y accesorios para café.,51,1
+57,Sofás,"Sofás, sillones y salas.",52,1
+58,Iluminación,"Lámparas, focos y soluciones de iluminación.",53,1
+59,Blancos,"Sábanas, cobijas, almohadas y textiles.",54,1
+60,Belleza y Cuidado Personal,"Productos de belleza, higiene y cuidado personal.",\N,1
+61,Maquillaje,Cosméticos y maquillaje.,60,1
+62,Cuidado de la Piel,Productos de skincare y dermocosmética.,60,1
+63,Cuidado del Cabello,"Shampoo, acondicionadores y tratamientos.",60,1
+64,Perfumes,"Fragancias para dama, caballero y unisex.",60,1
+65,Labios,"Labiales, gloss y delineadores.",61,1
+66,Rostro,"Bases, correctores, polvos y rubores.",61,1
+67,Hidratantes,Cremas y geles hidratantes.,62,1
+68,Protección Solar,Protectores solares faciales y corporales.,62,1
+69,Deportes y Aire Libre,"Artículos deportivos, fitness y actividades al aire libre.",\N,1
+70,Fitness,Equipo y accesorios para entrenamiento.,69,1
+71,Fútbol,"Balones, uniformes y accesorios de fútbol.",69,1
+72,Running,Artículos para correr y entrenamiento cardiovascular.,69,1
+73,Ciclismo,"Bicicletas, cascos y accesorios.",69,1
+74,Pesas y Mancuernas,Pesas libres y accesorios de fuerza.,70,1
+75,Yoga,"Tapetes, bloques y accesorios de yoga.",70,1
+76,Camping,"Tiendas, mochilas y equipo de campismo.",69,1
+77,Juguetes y Videojuegos,"Juguetes, juegos de mesa y videojuegos.",\N,1
+78,Juguetes Educativos,Juguetes de aprendizaje y STEM.,77,1
+79,Figuras y Coleccionables,"Figuras, modelos y artículos coleccionables.",77,1
+80,Videojuegos,Juegos físicos y digitales.,77,1
+81,Consolas,Consolas de videojuegos.,80,1
+82,Accesorios Gaming,"Controles, headsets y accesorios gamer.",80,1
+83,Juegos de Mesa,"Juegos de mesa, cartas y estrategia.",77,1
+84,Libros y Papelería,"Libros, material escolar y artículos de oficina.",\N,1
+85,Libros,Libros impresos y colecciones.,84,1
+86,Papelería,"Cuadernos, escritura y material escolar.",84,1
+87,Tecnología y Programación,"Libros de tecnología, informática y programación.",85,1
+88,Oficina,"Organización, archivo y consumibles de oficina.",86,1
+89,Automotriz,"Accesorios, refacciones y cuidado automotriz.",\N,1
+90,Accesorios para Auto,Accesorios interiores y exteriores.,89,1
+91,Cuidado Automotriz,"Limpieza, ceras y mantenimiento estético.",89,1
+92,Refacciones,Refacciones y componentes automotrices.,89,1
+93,Mascotas,Productos para el cuidado y bienestar de mascotas.,\N,1
+94,Perros,"Alimento, accesorios y cuidado para perros.",93,1
+95,Gatos,"Alimento, accesorios y cuidado para gatos.",93,1
+96,Campañas y Ofertas,"Categoría comercial para agrupar campañas, promociones y temporalidades.",\N,1
+97,Hot Sale,Selección promocional de productos para la campaña Hot Sale.,96,1
+98,Black Friday,Selección promocional de productos para Black Friday.,96,1
+99,Buen Fin,Selección promocional de productos para El Buen Fin.,96,1
+100,Cyber Monday,Selección promocional de productos para Cyber Monday.,96,1

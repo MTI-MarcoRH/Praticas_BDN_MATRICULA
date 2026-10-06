@@ -82,7 +82,7 @@ GRANT SELECT, UPDATE
 ON db_test.tb_products
 TO 'support';
 
-GRANT SELECT 
+GRANT SELECT, INSERT, UPDATE
 ON db_test.tbc_categories
 TO 'support';
 
