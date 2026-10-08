@@ -90,6 +90,10 @@ GRANT SELECT, INSERT, UPDATE
 ON db_test.tbd_products_categories
 TO 'support';
 
+GRANT EXECUTE
+ON PROCEDURE db_test.sp_soft_delete_user
+TO 'support'@'%';
+
 
 
 /* SELLER */
